@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pagina principal Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="TheBridge">
+    <meta name="description" content="Plantilla simple HTML5">
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
+
+</head>
+
+<main>
+<body class="body_index">
+    <div id="index"> 
+            <h1 class="h_index"> QuizBridge</h1>
+    <div>
+        <img src="../assets/principal.gif">
+    </div>
+    <div>
+        <button type="button" class="entrar" onclick="showform1()">Entrar </button>
+    </div>
+        
+     <div id="formulario_1" style="display:none;">
+            <form class="formulario"name="pregunta1" onsubmit="validaForm()" >
+                <ul class="preguntas">
+                    <h1 class="title_quiz" >¿Cuál es el DOCTYPE que se utiliza en HTML5?</h1>
+                  <li class="r1">
+                       <input type="radio" id="p1" name="doctype" value="1">
+                        <label for="p1">Con &#60;!DOCTYPE html &#62;</label><br>
+                   </li>
+                   <li class="r2">
+                        <input type="radio" id="p2" name="doctype" value="2">
+                        <label for="p2"> Poniendo &#60;!DOCTYPE &#62; &#60;!DOCTYPE html5 &#62;</label><br>
+                   </li>
+                   <li class="r3">
+                       <input type="radio" id="p3" name="doctype" value="3">
+                        <label for="p3">De esta manera &#60;!DOCTYPE&#62; &#60;!DOCTYPE html5 &#62;</label><br>
+                    </li>
+                    <li class="r4">
+                       <input type="radio" id="p4" name="doctype" value="4">
+                       <label for="p3">De esta manera &#60;&#60;!DOCTYPE &#62;&#62;</label><br>
+                    </li>
+                </ul>
+                <button class="button_index" type="submit" onclick="showForm2()">Siguiente </button>
+            </form>
+        </div> 
+        <div id="formulario_2"style="display:none;>
+            <form class="formulario"name="pregunta2" onsubmit="validaForm()" >
+                <ul class="preguntas">
+                <h1 class="title_quiz" >¿Cómo se define un color de fondo para todas las etiquetas "p" en CSS?</h1>
+                   <li class="r1">
+                        <input type="radio" id="p1" name="css" value="1">
+                        <label for="p1">#p {background-color:red;}</label><br>
+                   </li>
+                   <li class="r2">
+                        <input type="radio" id="p2" name="css" value="2">
+                        <label for="p2"> p.all {background-color:red;}</label><br>
+                    </li>
+                    <li class="r3">
+                        <input type="radio" id="p3" name="css" value="3">
+                        <label for="p2"> * {background-color:red;}</label><br>
+                    </li>
+                    <li class="r4">
+                        <input type="radio" id="p4" name="css" value="4">
+                        <label for="p4">p {background-color:red;}</label><br>
+                    </li>  
+                </ul>
+                <button id="bottom_index" type="submit">Siguiente </button>
+                </form>
+            </div>   
+ </body>
+</main>
+
+</html>
+
